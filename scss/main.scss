@@ -1,0 +1,960 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+$violeta: #977999;
+$blanco: #FFFFFF;
+$gris: #707070;
+
+h4 {
+    color: $violeta;
+    font-size: 1.2em;
+    margin: 2em;
+}
+
+//HOME
+.row {
+    max-width: 100%;
+}
+
+.dropdown-item {
+    color: $violeta;
+    border-bottom: 1px solid $violeta;
+    width: 90%;
+}
+
+.dropdown-item:hover {
+    background-color: $violeta !important;
+    color: $blanco !important;
+    text-decoration: none !important;
+}
+
+.show {
+    border-radius: 25px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: $blanco;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    .socials {
+        padding: 0.2em;
+        a {
+            margin: 0.2em;
+            color: $violeta;
+            text-decoration: none;
+        }
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 0.9em;
+    a {
+    text-decoration: none;
+    color: $violeta;
+    margin: 10px;
+    padding: 5px;
+    }
+    a:hover {
+        text-decoration: underline;
+        font-weight: 600;
+        color: $violeta;
+    }
+    button {
+        border: none;
+        background-color: transparent;
+        color: $violeta;
+        font-weight: 500;
+    }
+    button:focus {
+        text-decoration: underline;
+        font-weight: 600;
+        color: $violeta;
+    }
+    div {
+        margin: 10px;
+        padding: 5px;
+    }
+    .dropdown-item {
+        font-size: 0.8em;
+    }
+}
+
+#home {
+    background-image: url("../multimedia/herohome.jpg");
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    button {
+        border: none;
+        color: $blanco;
+        background-color: transparent;
+        margin: 20px;
+        font-size: 1.5em;
+        a {
+            color:$blanco;
+            text-decoration: none;
+            padding: 5px;
+            transition-duration: 2s;
+        }
+        a:hover {
+            border-bottom: 1px solid $blanco;
+            color: $blanco;
+        }
+    }
+}
+
+#chat {
+    position: fixed;
+    right: 0.5em;
+    bottom: 0.5em;
+    z-index: 50;
+    background-color: $violeta;
+    color: $blanco;
+    margin: 20px;
+    padding: 0.3em;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid $blanco;
+    img {
+        margin: 10px;
+    }
+    div {
+        margin: 5px;
+        width: 100%;
+        p {
+            margin:0px;
+            font-weight: 400;
+            font-size: 0.9em;
+        }
+    }
+    .fas {
+        height: 100%;
+        width: 5%;
+        margin: 1em;
+    }
+}
+
+#seccionDos {
+    margin: 2em;
+    padding: 1em;
+    .row {
+        margin: 2em;
+        padding: 1em;
+        height: 500px; //alto de la foto
+        display: flex;
+        justify-content: center;
+        #myStoryH {
+            background-image: url("../multimedia/mystory.JPG");
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        #goToMenuH {
+            background-image: url("../multimedia/products.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end; 
+        }
+        button {
+            border: none;
+            background-color: transparent;
+            margin: 2.5em;
+            a {
+                color: $blanco;
+                text-decoration: none;
+                padding: 1em 3em;
+                border: 2px solid $blanco;
+            }
+            a:hover {
+                background-color: $violeta;
+                border: 2px solid $violeta;
+            }
+        }
+    }
+}
+
+#mobilesd {
+    display: none;
+}
+
+#seccionTres {
+    background-image: url("../multimedia/bakedlove.JPG");
+    color: $blanco;
+    font-style: italic;
+    height: 500px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        margin: 2em;
+        font-size: 4em;
+        font-weight: 500;
+    }
+}
+
+#seccionCuatro {
+    margin: 3em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .carousel {
+        height: 100%;
+        width: 100%;
+        padding: 2em;
+    }
+    .bordec {
+        border-bottom: 2px solid $gris;
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin-bottom: 1.9em;
+    }
+    .texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $violeta;
+        h2 {
+            font-size: 3em;
+            font-weight: 400;
+        }
+        p {
+            font-size: 1em;
+        }
+        a {
+            color: $violeta;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    .bordec {
+        border-bottom: 2px solid $gris;
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin-bottom: 1.9em;
+    }
+    .texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $violeta;
+        h2 {
+            font-size: 3em;
+            font-weight: 400;
+        }
+        p {
+            font-size: 1em;
+        }
+    }
+    h4 {
+        color: $violeta;
+        font-size: 1.2em;
+        margin: 2em;
+    }
+    button {
+        border: $violeta 2px solid;
+        color: $violeta;
+        text-transform: uppercase;
+        background-color: transparent;
+    }
+    button:focus {
+        background-color: $violeta;
+        color: $blanco;
+    }
+    .rc {
+        margin: 1em 0;
+        width: 95%;
+    }
+    .col-6 {
+        padding: 0;
+    }
+    form {
+        width: 100%;
+        .row {
+            margin: 0.5em;
+        }
+        input, select, textarea {
+            color: $violeta;
+            font-size: 0.9em;
+            border-radius: 10px;
+            border-color: $violeta;
+            padding: 0.6em;
+        }
+        .buttonsc {
+            margin: 0 1em;
+            button {
+                margin: 0.5em;
+                padding: 0.5em 1em;
+            }
+            button:hover {
+                background-color: $violeta;
+                color: $blanco;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $violeta;
+    color: $blanco;
+    width: 100%;
+    z-index: 200;
+    padding: 0 6em;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    div {
+        padding: 2em;
+    }
+    .socials {
+        display: flex;
+        justify-content: flex-end;
+        a {
+            color: $blanco;
+            text-decoration: none;
+            margin: 1em;
+        }
+        svg {
+            height: 2em;
+            width: 2em;
+        }
+    }
+}
+
+//MY STORY
+#mystory {
+    #allergy {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+#myStoryS, #productsS {
+    margin: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .img {
+        margin: 1em;
+        padding: 1em;
+    }
+    .texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+        h1 {
+            padding: 0.3em;
+            font-size: 3em;
+            color: $violeta;
+        }
+        p {
+            padding: 0.5em;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 0.9em;
+            color: $gris;
+        }
+        .parrafo {
+            margin: 0.5em 3em;
+            padding: 0 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .hello {
+            border-bottom: 2px solid $gris;
+            width: 60%;
+            margin: 1em;
+            display: flex;
+            justify-content: center;
+        }
+        button {
+            width: 15em;
+            margin: 0.5em;
+            padding: 0.5em 1em;
+            color: $violeta;
+            text-transform: uppercase;
+            font-size: 1em;
+            border: 2px solid $violeta;
+            background-color: transparent;
+        }
+        button:hover {
+            background-color: $violeta;
+            color: $blanco;
+        }
+        a {
+            text-decoration: none;
+            color: $violeta;
+        }
+        a:hover {
+            color: $blanco;
+        }
+    }
+}
+
+//How to order
+#htoo, #htot {
+    #allergy {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .titulo {
+        background-color: $violeta;
+        color: $blanco;
+        display: flex;
+        justify-content: center;
+        margin: 1em 0;
+        div {
+            margin: 1em;
+        }
+        h1, h2 {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin: 0;
+        }
+        h1 {
+            font-size: 5em;
+        }
+        h2 {
+            font-size: 2em;
+        }
+    }
+    .texto {
+        color: $violeta;
+        text-align: center;
+        margin: 1.5em;
+        .subt {
+            border-bottom: 1px solid $gris;
+            text-transform: uppercase;
+            padding: 3em;
+            margin: 3em 10em;
+            font-weight: 400;
+            font-size: 0.3em;
+        }
+        .pasos {
+            margin: 1em 0 0.5em;
+            padding: 1em;
+            font-size: 1em;
+        }
+        button {
+            width: 15em;
+            margin: 0 0 0.5em;
+            padding: 0.5em 1em;
+            color: $violeta;
+            text-transform: uppercase;
+            font-size: 1em;
+            border: 2px solid $violeta;
+            background-color: transparent;
+        }
+        button:hover {
+            background-color: $violeta;
+            color: $blanco;
+        }
+        a {
+            text-decoration: none;
+            color: $violeta;
+        }
+        a:hover {
+            color: $blanco;
+        }
+    }
+}
+
+#htod {
+    .row {
+        height: 100%;
+        width: 100%;
+        padding: 3em;
+        margin: 1em 0;
+    }
+}
+
+#products1, #products2, #products3 {
+    h3 {
+        color: $violeta;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    h4 {
+        color: $violeta;
+        font-size: 3.5em;
+        font-weight: 400;
+        margin: 0.5em;
+        text-align: center;
+    }
+    #allergy {
+        margin: 3em;
+    }
+    .titulo {
+        background-color: $violeta;
+        color: $blanco;
+        display: flex;
+        justify-content: center;
+        margin: 1em 0;
+        div {
+            margin: 1em;
+        }
+        h1, h2 {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin: 0;
+        }
+        h1 {
+            font-size: 5em;
+        }
+        h2 {
+            font-size: 2em;
+        }
+    }
+    .texto {
+        color: $violeta;
+        text-align: center;
+        margin: 1em 1em 3em;
+        h3 {
+            font-weight: 400;
+            font-size: 1.5em;
+        }
+        .subt {
+            border-bottom: 1px solid $gris;
+            text-transform: uppercase;
+            padding: 1em 0;
+            margin: 2em;
+        }
+    }
+    .producto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 5em 2em;
+        .cuerpo {
+            text-align: center;
+            margin: 1.5em;
+            width: 40%;
+            h2 {
+                color: $violeta;
+                font-size: 3.5em;
+                font-weight: 400;
+
+            }
+            p {
+                padding: 0 2em;
+                color: $gris;
+                font-size: 0.9em;
+            }
+            .ttl {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 1em;
+            }
+            .subt {
+                border-bottom: 1px solid $gris;
+                width: 50%;
+            }
+        }
+    }
+    button {
+        width: 15em;
+        margin: 0 0 0.5em;
+        padding: 0.5em 1em;
+        color: $violeta;
+        text-transform: uppercase;
+        font-size: 1em;
+        border: 2px solid $violeta;
+        background-color: transparent;
+    }
+    button:hover {
+        background-color: $violeta;
+        color: $blanco;
+    }
+    a {
+        text-decoration: none;
+        color: $violeta;
+    }
+    a:hover {
+        color: $blanco;
+    }
+    .carousel, .carrousel {
+        height: 100%;
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+#menudesplegable {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        display: none;
+    }
+
+    #menudesplegable {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: $blanco;
+        img {
+            margin: 10px;
+            padding: 5px;
+            margin-left: 10px;
+        }
+        a {
+            margin: 30px;
+            color: $violeta;
+        }
+    }
+
+    nav {
+        background-color: $blanco;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        .borderbottom {
+            border-bottom: 1px solid $violeta;
+            width: 50%;
+            padding: 0;
+            margin: 0;
+        }
+        a:hover, button:hover {
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .accordion-item {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            .accordion-collapse, .show {
+                border:none;
+                padding: 0;
+                margin: 0;
+            }
+            .menudb {
+                margin: 0;
+                padding: 0;
+                a {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+
+    #chat {
+        display: none;
+    }
+
+    #seccionDos {
+        .row {
+            display:none;
+        }
+    }
+
+    #mobilesd {
+        display: flex;
+        flex-direction: column;
+        #myStoryH {
+            background-image: url("../multimedia/mystory.JPG");
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 500px;
+            margin: 1em;
+        }
+        #goToMenuH {
+            background-image: url("../multimedia/products.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 500px;
+            margin: 1em; 
+        }
+        button {
+            border: none;
+            background-color: transparent;
+            margin: 2.5em;
+            a {
+                color: $blanco;
+                text-decoration: none;
+                padding: 1em 3em;
+                border: 2px solid $blanco;
+            }
+            a:hover {
+                background-color: $violeta;
+                border: 2px solid $violeta;
+            }
+        }
+    }
+
+    #seccionTres {
+        background-image: url("../multimedia/bakedlovem.JPG");
+        width: 100%;
+        height: 300px;
+        h1 {
+            font-size: 2.5em;
+        }
+    }
+
+    #seccionCuatro {
+        margin: 2em 1em;
+        padding: 1em;
+        .carousel {
+            padding: 0.5em;
+        }
+        .texto {
+            h2 {
+                font-size: 1.9em;
+            }
+            p {
+                font-size: 0.9em
+            }
+            a {
+                color: $violeta;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    #contact {
+        .texto {
+            h2 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 0.9em;
+                text-align: center;
+            }
+        } 
+        .row {
+            display: flex;
+            flex-direction: column;
+            form {
+                input, select, textarea {
+                    width: 350px;
+                    padding: 10px;
+                    margin: 8px;
+                }
+                .buttonsc {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 0 0 0 6em;
+                }
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 1.5em;
+        font-size: 1.1em;
+        .row {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 0;
+            padding: 0;
+            div {
+                margin: 0.5em;
+                padding: 0.5em;
+                p {
+                    width: 300px;
+                }
+            }
+            .socials {
+                margin: 0;
+                padding: 0;
+                width: 39%;
+                a {
+                    margin: 5px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+    #myStoryS {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        .img {
+            margin: 0 0.5em;
+            padding: 0;
+        }
+        img {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .texto {
+            margin: 0.5em;
+            padding: 0;
+            width: 100%;
+            p {
+                margin: 0;
+                padding: 0;
+            }
+            .parrafo {
+                margin: 0.5em;
+                padding: 0.5em;
+                font-size: 1.3em;
+            }
+        }
+    }
+
+    #productsS {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+        .img {
+            margin: 1em 0.5em 0 0.5em;
+            padding: 0;
+        }
+        img {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .texto {
+            margin: 0.5em;
+            padding: 0;
+            width: 100%;
+            p {
+                margin: 0;
+                padding: 0;
+            }
+            .parrafo {
+                margin: 0.5em;
+                padding: 0.5em;
+                font-size: 1.3em;
+            }
+        }
+    }
+
+    #htod {
+        display:none;
+    }
+
+    iframe {
+        width: 400px;
+    }
+
+    #htoo {
+        a:hover {
+            background-color: $violeta;
+        }
+    }
+
+    #products1, #products2, #products3 {
+        h4 {
+            margin: 1em 0 0 0;
+        }
+        .titulo {
+            width: 100%;
+            h1 {
+                font-size: 2em;
+            }
+        }
+        .texto {
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+        .producto {
+            display: flex;
+            flex-direction: column;
+            margin:0;
+            .cuerpo {
+                width: 100%;
+                h2 {
+                    font-size: 3em;
+                }
+                p {
+                    font-size: 1.2em;
+                }
+            }
+        }
+        .productoA {
+            display:flex;
+            flex-direction: column-reverse;
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+}
