@@ -70,7 +70,7 @@ nav {
     font-size: 0.8em; }
 
 #home {
-  background-image: url("../multimedia/herohome.jpg");
+  background-image: url("./multimedia/herohome.jpg");
   height: 700px;
   display: flex;
   justify-content: center;
